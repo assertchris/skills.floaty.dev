@@ -6,8 +6,8 @@ globs:
 
 # Floaty.dev Playground & Plugin API
 
-REPO_URL: https://github.com/assertchris/skills.floaty.dev
-RAW_URL: https://raw.githubusercontent.com/assertchris/skills.floaty.dev/main/cursor/.cursor/rules/floaty.mdc
+REPO_URL: https://github.com/floaty-dev/agent-skills
+RAW_URL: https://raw.githubusercontent.com/floaty-dev/agent-skills/main/cursor/.cursor/rules/floaty.mdc
 
 ## Self-Update Check
 

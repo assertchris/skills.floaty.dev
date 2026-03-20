@@ -4,8 +4,8 @@ applyTo: "**"
 
 # Floaty.dev Playground & Plugin API
 
-REPO_URL: https://github.com/assertchris/skills.floaty.dev
-RAW_URL: https://raw.githubusercontent.com/assertchris/skills.floaty.dev/main/copilot/.github/instructions/floaty.instructions.md
+REPO_URL: https://github.com/floaty-dev/agent-skills
+RAW_URL: https://raw.githubusercontent.com/floaty-dev/agent-skills/main/copilot/.github/instructions/floaty.instructions.md
 
 ## Self-Update Check
 

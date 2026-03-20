@@ -58,7 +58,7 @@ All requests require `Authorization: Bearer <token>`, `Content-Type: application
 Copy the skill files into your project:
 
 ```bash
-BASE=https://raw.githubusercontent.com/assertchris/skills.floaty.dev/main/claude-code/floaty
+BASE=https://raw.githubusercontent.com/floaty-dev/agent-skills/main/claude-code/floaty
 for f in SKILL.md api-reference.md engine-reference.md; do
   curl -sL "$BASE/$f" --create-dirs -o ".claude/skills/floaty/$f"
 done
@@ -71,7 +71,7 @@ Then use it with `/floaty` in Claude Code.
 Copy the rules file into your project:
 
 ```bash
-curl -sL https://raw.githubusercontent.com/assertchris/skills.floaty.dev/main/cursor/.cursor/rules/floaty.mdc \
+curl -sL https://raw.githubusercontent.com/floaty-dev/agent-skills/main/cursor/.cursor/rules/floaty.mdc \
   --create-dirs -o .cursor/rules/floaty.mdc
 ```
 
@@ -80,7 +80,7 @@ curl -sL https://raw.githubusercontent.com/assertchris/skills.floaty.dev/main/cu
 Copy the instructions file into your project:
 
 ```bash
-curl -sL https://raw.githubusercontent.com/assertchris/skills.floaty.dev/main/copilot/.github/instructions/floaty.instructions.md \
+curl -sL https://raw.githubusercontent.com/floaty-dev/agent-skills/main/copilot/.github/instructions/floaty.instructions.md \
   --create-dirs -o .github/instructions/floaty.instructions.md
 ```
 
