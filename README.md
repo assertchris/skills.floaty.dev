@@ -32,6 +32,8 @@ All requests require `Authorization: Bearer <token>`, `Content-Type: application
 | PUT | `/api/v1/playground` | Write script | Owner + collaborators |
 | PUT | `/api/v1/playground/meta` | Update title, background, visibility | Owner only |
 | PUT | `/api/v1/playground/plugins` | Update plugin associations | Owner only |
+| GET | `/api/v1/playground/plugins/{uuid}` | Read attached plugin script + releases | Owner + collaborators |
+| GET | `/api/v1/playground/plugins/{uuid}/releases/{releaseUuid}` | Read specific release of attached plugin | Owner + collaborators |
 
 ### Plugin Endpoints
 
@@ -40,7 +42,9 @@ All requests require `Authorization: Bearer <token>`, `Content-Type: application
 | GET | `/api/v1/plugin` | Read draft script, metadata, latest release | Owner only |
 | PUT | `/api/v1/plugin` | Write draft script | Owner only |
 | PUT | `/api/v1/plugin/meta` | Update title, description, visibility | Owner only |
-| POST | `/api/v1/plugin/release` | Mint new version from current draft | Owner only |
+| POST | `/api/v1/plugin/release` | Create new version from current draft | Owner only |
+| GET | `/api/v1/plugin/releases` | List all releases | Owner only |
+| GET | `/api/v1/plugin/releases/{uuid}` | Read a specific release script | Owner only |
 
 ### Error Codes
 
