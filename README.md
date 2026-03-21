@@ -1,4 +1,4 @@
-# Floaty.dev AI Tools
+# Floaty.dev Agent Skills
 
 Build pixel games on [Floaty.dev](https://floaty.dev) using your AI coding assistant. This repo contains skillset files for Claude Code, Cursor, and GitHub Copilot that teach your agent how to read and write playground and plugin scripts via the Floaty API.
 
@@ -96,6 +96,15 @@ Example prompts to get started:
 - "Add keyboard controls to move the player with arrow keys"
 - "Create a simple platformer with gravity and jumping"
 - "Read the plugin script and add a health bar helper"
+
+The agent will use the API to read the current script, make changes, and write it back. You can preview the result in your browser:
+
+- Editor: `https://floaty.dev/en/playground/{uuid}`
+- Preview (full screen): `https://floaty.dev/en/playground/{uuid}/preview`
+
+You can ask your agent for the UUID — it's included in the API response when reading a playground.
+
+> **Note:** The playground editor is not multi-user. If you have the editor open while an agent writes to the same playground via the API, clicking Run will save the version you see in the editor — overwriting whatever the agent has changed since you opened it. Use the full-screen preview URL instead when working with an agent.
 
 ## Checking for Updates
 
